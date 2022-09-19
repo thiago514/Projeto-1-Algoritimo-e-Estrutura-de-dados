@@ -119,10 +119,12 @@ int main()
                 listarautores(autor, numAutores);
             }
         break;
+        
         case 2:
             autor[numAutores] = addAutor();
             numAutores ++;
         break;
+
         case 3:
             if(numLivros == 0){
                     printf("Nenhum livro foi adicionado\n");
@@ -132,6 +134,7 @@ int main()
                 }
                 
         break;
+
         case 4:
             if(numAutores == 0){
                 printf("Não ha autores adicionados\n");
@@ -151,6 +154,7 @@ int main()
                 numLivros++;
             }
         break;
+
         case 5:
             if(numPersonagens == 0){
                 printf("Nenhum personagem foi adicionado\n");
@@ -160,6 +164,7 @@ int main()
             }
                     
         break;
+
         case 6:
             if(numAutores == 0){
                 printf("Não ha autores adicionados\n");
@@ -190,14 +195,14 @@ int main()
                 numPersonagens++;
             }
         break;
+
         case 7:
         c = 7;
         break;
 
-
+        default:
+        printf("Opção invalida\n");
         }
-
-
     }
     return 0;
 }
